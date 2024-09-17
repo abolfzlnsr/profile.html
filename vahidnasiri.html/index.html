@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+    <title>Document</title>
+</head>
+<body>
+<nav class="nav">
+    <a href="javascript:void(0)" class="nav-link nav-link-dark">
+        <span>New Message</span>
+        <i class="fa fa-pencil"></i>
+    </a>
+    <a href="javascript:void(0)" class="nav-link nav-link-red" id="nav-mail-button" onclick="toggleNavMail()">
+        <i class="fa fa-inbox"></i>
+        <span>Inboxes (3)</span>
+        <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="nav-mail-container" class="nav-mail-container active">
+        <a href="javascript:void(0)" class="nav-mail" onclick="openMail('borge')">
+            <div class="nav-mail-header">
+                <img src="img/avatar3.png" alt="Avatar 1" class="nav-mail-avatar">
+                <h5 class="nav-mail-name">Borge Refsnes</h5>
+            </div>
+            <h5 class="nav-mail-subject">Subject: Remember Me</h5>
+            <p class="nav-mail-snippet">Hello, i just wanted to let you know that i'll be home at...</p>
+        </a>
+        <a href="javascript:void(0)" class="nav-mail" onclick="openMail('jane')">
+            <div class="nav-mail-header">
+                <img src="img/avatar5.png" alt="Avatar 1" class="nav-mail-avatar">
+                <h5 class="nav-mail-name">Jane Doe</h5>
+            </div>
+            <p class="nav-mail-snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </a>
+        <a href="javascript:void(0)" class="nav-mail" onclick="openMail('john')">
+            <div class="nav-mail-header">
+                <img src="img/avatar2.png" alt="Avatar 1" class="nav-mail-avatar">
+                <h5 class="nav-mail-name">John Doe
+                   
+                </h5>
+                
+            </div>
+            <p class="nav-mail-snippet">Welcome!</p>
+        </a>
+    </div>
+    <a href="#" class="nav-sublink">
+        <i class="fa fa-paper-plane"></i>
+        <span>Sent</span>
+    </a>
+    <a href="#" class="nav-sublink">
+        <i class="fa fa-hourglass-end"></i>
+        <span>Drafts</span>
+    </a>
+    <a href="#" class="nav-sublink">
+        <i class="fa fa-trash"></i>
+        <span>Trash</span>
+    </a>
+</nav>
+<div class="content">
+    <div id="borge" class="person">
+        <br>
+        <img class="w3-round w3-animate-top" src="img/avatar3.png" style="width: 20%;">
+        <h5 class="w3-opacity">Subject: Remember Me
+         
+        </h5>
+        <h4>
+     From Borge Refsnes, Sep27, 2024.
+        </h4>
+        <button type="button"><a href="#"> <i class="fa fa-mail-reply"></i> Reply</a></button>
+        <button type="button"><a href="#"> <i class="fas fa-arrow-right"></i> Forward</a></button>
+        <hr>
+        <p>
+
+            Subject: Remember Me
+             From Borge Refsnes, Sep 27, 2015.
+             
+            Hello, i just wanted to let you know that i'll be home at lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Best Regards,
+            Borge Refsnes</p>
+    </div>
+    <div id="jane" class="person">
+        <br>
+        <img class="w3-round w3-animate-top"  src="img/avatar5.png"  style="width: 20%;">
+        <h5 class="w3-opacity">Subjrct: None</h5>
+        <h4> From Borge Refsnes, Sep27, 2024.</h4>
+        <button type="button"><a href="#"> <i class="fa fa-mail-reply"></i> Reply</a></button>
+        <button type="button"><a href="#"> <i class="fas fa-arrow-right"></i> Forward</a></button>
+        <hr>
+        <p>
+
+            Subject: Remember Me
+             From Borge Refsnes, Sep 27, 2015.
+    
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Best Regards,
+            Borge Refsnes</p>
+    </div>
+    <div id="john" class="person">
+        <br>
+        <img class="w3-round w3-animate-top"  src="img/avatar2.png" style="width: 20%;">
+        <h5 class="w3-opacity">Subjrct: None</h5>
+        <h4>From John Doe, Sep 23, 2015.</h4>
+        <button type="button"><a href="#"> <i class="fa fa-mail-reply"></i> Reply</a></button>
+        <button type="button"><a href="#"> <i class="fas fa-arrow-right"></i> Forward</a></button>
+        <hr>
+<p>Welcome.</p>
+<p>That's it!</p>
+    </div>
+</div>
+<script>
+    let NavMailContainer = document.getElementById('nav-mail-container')
+    let NavMailButton = document.getElementById('nav-mail-button')
+
+    function toggleNavMail() {
+        NavMailContainer.classList.toggle('active')
+    }
+
+    function openMail(personName) {
+        let persons = document.getElementsByClassName('person')
+        persons = Array.from(persons)
+        persons.forEach(function (person) {
+            person.className = 'person'
+            document.getElementById(personName).className = 'person active'
+        })
+    }
+
+    openMail('borge')
+</script>
+</body>
+</html>
